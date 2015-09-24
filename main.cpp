@@ -29,12 +29,16 @@ using namespace std;
             return (width * height)/2;
         }
     };
+class Rectangle: public Shape{public:   double getArea()   {      return (width * height);   }};
 int main(void)
 {
     Triangle Tri;
+    Rectangle Rect;
     Tri.setWidth(5);
     Tri.setHeight(7);
+   Rect.setWidth(5);   Rect.setHeight(5);
     //Print area of the object.
     cout << "Total Triangle area : " << Tri.getArea()<< endl;
-    return 0;
+   cout << "Total Rectangle area: " << Rect.getArea() << endl;    
+return 0;
 }
