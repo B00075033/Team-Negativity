@@ -66,5 +66,6 @@ int main(void)
     cout << "Total Triangle area : " << Tri.getArea()<< endl;
     cout << "Total Rectangle area: " << Rect.getArea() << endl;
     cout << "Total Circle area: " << Cir.getArea() << endl;
+    cout << "Total area: " << Cir.getArea() + Rect.getArea() + Tri.getArea() << endl;
     return 0;
 }
